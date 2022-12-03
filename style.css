@@ -1,0 +1,122 @@
+* {
+  background-color: #121213;
+}
+
+div {
+  text-align: center;
+  background-color: #121213;
+}
+
+#header {
+  font-family: 'nyt-karnakcondensed';
+  font-size: 42px;
+  font-weight: 1000;
+  color: #ffffff;
+  border-bottom: #3a3a3c 1px solid;
+}
+
+#no-frame {
+  padding: 0px;
+  margin: 0px;
+}
+
+#frame {
+  margin: 31px;
+}
+
+#letter {
+  width: 60px;
+  margin: 4px;
+}
+
+#not-submitted {
+  border: #3a3a3c 2px solid;
+}
+
+#green {
+  background-color: #538d4e;
+}
+
+#yellow {
+  background-color: #b59f3b;
+}
+
+#gray {
+  background-color: #3a3a3c;
+}
+
+#button {
+  background-color: #818384;
+  border: 0px;
+  width: 43px;
+  height: 58px;
+  margin-right: 6px;
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+#button-green {
+  background-color: #538d4e;
+  border: 0px;
+  width: 43px;
+  height: 58px;
+  margin-right: 6px;
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+#button-yellow {
+  background-color: #b59f3b;
+  border: 0px;
+  width: 43px;
+  height: 58px;
+  margin-right: 6px;
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+#button-gray {
+  background-color: #3a3a3c;
+  border: 0px;
+  width: 43px;
+  height: 58px;
+  margin-right: 6px;
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+#button-2 {
+  background-color: #818384;
+  border: 0px;
+  width: 65px;
+  height: 58px;
+  margin-right: 6px;
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+#button-3 {
+  background-color: #818384;
+  border: 0px;
+  width: 100px;
+  height: 58px;
+  margin-right: 6px;
+  margin-top: 6px;
+  font-size: 14px;
+}
+.text {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0px;
+  padding: 2px 0px 2px 0px;
+}
+
+#streak-info {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+#icon {
+  background-color: #818384;
+}
