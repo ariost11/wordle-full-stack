@@ -132,12 +132,12 @@ export default class Grid extends React.Component {
   render() {
     let index = 0;
     const list = [1, 2, 3, 4, 5, 6].map(a => 
-      <Row className="justify-content-md-center" id='no-frame'>
-        <Col id='no-frame' sm md="auto"><Box letter={this.state.letters[index]} color={this.state.colors[index++]}/></Col>
-        <Col id='no-frame' sm md="auto"><Box letter={this.state.letters[index]} color={this.state.colors[index++]}/></Col>
-        <Col id='no-frame' sm md="auto"><Box letter={this.state.letters[index]} color={this.state.colors[index++]}/></Col>
-        <Col id='no-frame' sm md="auto"><Box letter={this.state.letters[index]} color={this.state.colors[index++]}/></Col>
-        <Col id='no-frame' sm md="auto"><Box letter={this.state.letters[index]} color={this.state.colors[index++]}/></Col>
+      <Row className="justify-content-md-center">
+        <Col className='no-frame' sm md="auto"><Box letter={this.state.letters[index]} color={this.state.colors[index++]}/></Col>
+        <Col className='no-frame' sm md="auto"><Box letter={this.state.letters[index]} color={this.state.colors[index++]}/></Col>
+        <Col className='no-frame' sm md="auto"><Box letter={this.state.letters[index]} color={this.state.colors[index++]}/></Col>
+        <Col className='no-frame' sm md="auto"><Box letter={this.state.letters[index]} color={this.state.colors[index++]}/></Col>
+        <Col className='no-frame' sm md="auto"><Box letter={this.state.letters[index]} color={this.state.colors[index++]}/></Col>
       </Row>
     );
 

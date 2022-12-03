@@ -15,7 +15,7 @@ div {
   border-bottom: #3a3a3c 1px solid;
 }
 
-#no-frame {
+.no-frame {
   padding: 0px;
   margin: 0px;
 }
@@ -85,7 +85,7 @@ div {
   font-size: 14px;
 }
 
-#button-2 {
+.button-2 {
   background-color: #818384;
   border: 0px;
   width: 65px;
@@ -119,4 +119,14 @@ div {
 
 #icon {
   background-color: #818384;
+}
+
+.btn-flat {
+  background-color: #818384;
+  color: white;
+}
+
+.btn-flat:focus {
+  background-color: #818384;
+  color: white;
 }

@@ -13,9 +13,7 @@ export default class Keyboard extends React.Component{
   }
 
   componentDidMount() {
-    setTimeout(() => {
-      $('#keyboard').focus();
-    }, 0);
+    $('#keyboard').focus();
   }
 
   handleKeyDown(event) {
@@ -32,26 +30,27 @@ export default class Keyboard extends React.Component{
   }
 
   render() {
+    $('#keyboard').focus();
     const firstRow = ['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P'].map(a => 
-      this.props.green.includes(a.toLowerCase()) ? <Col id='no-frame' sm md="auto"><Button id='button-green' onClick={() => this.props.update(a)}>{a}</Button></Col> : 
-      this.props.yellow.includes(a.toLowerCase()) ? <Col id='no-frame' sm md="auto"><Button id='button-yellow' onClick={() => this.props.update(a)}>{a}</Button></Col> :
-      this.props.gray.includes(a.toLowerCase()) ? <Col id='no-frame' sm md="auto"><Button id='button-gray' onClick={() => this.props.update(a)}>{a}</Button></Col> :
-      <Col id='no-frame' sm md="auto"><Button id='button' onClick={() => this.props.update(a)}>{a}</Button></Col>
+      this.props.green.includes(a.toLowerCase()) ? <Col className='no-frame' sm md="auto"><Button id='button-green' onClick={() => this.props.update(a)}>{a}</Button></Col> : 
+      this.props.yellow.includes(a.toLowerCase()) ? <Col className='no-frame' sm md="auto"><Button id='button-yellow' onClick={() => this.props.update(a)}>{a}</Button></Col> :
+      this.props.gray.includes(a.toLowerCase()) ? <Col className='no-frame' sm md="auto"><Button id='button-gray' onClick={() => this.props.update(a)}>{a}</Button></Col> :
+      <Col className='no-frame' sm md="auto"><Button id='button' onClick={() => this.props.update(a)}>{a}</Button></Col>
     );
     const secondRow = ['A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L'].map(a => 
-      this.props.green.includes(a.toLowerCase()) ? <Col id='no-frame' sm md="auto"><Button id='button-green' onClick={() => this.props.update(a)}>{a}</Button></Col> : 
-      this.props.yellow.includes(a.toLowerCase()) ? <Col id='no-frame' sm md="auto"><Button id='button-yellow' onClick={() => this.props.update(a)}>{a}</Button></Col> :
-      this.props.gray.includes(a.toLowerCase()) ? <Col id='no-frame' sm md="auto"><Button id='button-gray' onClick={() => this.props.update(a)}>{a}</Button></Col> :
-      <Col id='no-frame' sm md="auto"><Button id='button' onClick={() => this.props.update(a)}>{a}</Button></Col>
+      this.props.green.includes(a.toLowerCase()) ? <Col className='no-frame' sm md="auto"><Button id='button-green' onClick={() => this.props.update(a)}>{a}</Button></Col> : 
+      this.props.yellow.includes(a.toLowerCase()) ? <Col className='no-frame' sm md="auto"><Button id='button-yellow' onClick={() => this.props.update(a)}>{a}</Button></Col> :
+      this.props.gray.includes(a.toLowerCase()) ? <Col className='no-frame' sm md="auto"><Button id='button-gray' onClick={() => this.props.update(a)}>{a}</Button></Col> :
+      <Col className='no-frame' sm md="auto"><Button id='button' onClick={() => this.props.update(a)}>{a}</Button></Col>
     );
     const thirdRow = ['Z', 'X', 'C', 'V', 'B', 'N', 'M'].map(a => 
-      this.props.green.includes(a.toLowerCase()) ? <Col id='no-frame' sm md="auto"><Button id='button-green' onClick={() => this.props.update(a)}>{a}</Button></Col> : 
-      this.props.yellow.includes(a.toLowerCase()) ? <Col id='no-frame' sm md="auto"><Button id='button-yellow' onClick={() => this.props.update(a)}>{a}</Button></Col> :
-      this.props.gray.includes(a.toLowerCase()) ? <Col id='no-frame' sm md="auto"><Button id='button-gray' onClick={() => this.props.update(a)}>{a}</Button></Col> :
-      <Col id='no-frame' sm md="auto"><Button id='button' onClick={() => this.props.update(a)}>{a}</Button></Col>
+      this.props.green.includes(a.toLowerCase()) ? <Col className='no-frame' sm md="auto"><Button id='button-green' onClick={() => this.props.update(a)}>{a}</Button></Col> : 
+      this.props.yellow.includes(a.toLowerCase()) ? <Col className='no-frane' sm md="auto"><Button id='button-yellow' onClick={() => this.props.update(a)}>{a}</Button></Col> :
+      this.props.gray.includes(a.toLowerCase()) ? <Col className='no-frame' sm md="auto"><Button id='button-gray' onClick={() => this.props.update(a)}>{a}</Button></Col> :
+      <Col className='no-frame' sm md="auto"><Button id='button' onClick={() => this.props.update(a)}>{a}</Button></Col>
     );
     return(
-      <div id='keyboard' onKeyDown={(e) => this.handleKeyDown(e)}>
+      <div onKeyDown={(e) => this.handleKeyDown(e)}>
         <Row className="justify-content-md-center">
           {firstRow}
         </Row>
@@ -59,9 +58,9 @@ export default class Keyboard extends React.Component{
           {secondRow}
         </Row>
         <Row className="justify-content-md-center">
-          <Col id='no-frame' sm md="auto"><Button id='button-2' onClick={() => this.props.submit()}>ENTER</Button></Col>
+          <Col className='no-frame' sm md="auto"><Button variant="flat" className='button-2' id='keyboard' onClick={() => this.props.submit()}>ENTER</Button></Col>
           {thirdRow}
-          <Col id='no-frame' sm md="auto"><Button id='button-2' onClick={() => this.props.delete()}><FontAwesomeIcon id='icon' icon={faDeleteLeft}/></Button></Col>
+          <Col className='no-frame' sm md="auto"><Button className='button-2' onClick={() => this.props.delete()}><FontAwesomeIcon id='icon' icon={faDeleteLeft}/></Button></Col>
         </Row>
       </div>
     );
