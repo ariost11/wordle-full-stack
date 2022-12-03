@@ -95,6 +95,7 @@ export default class Grid extends React.Component {
     });
 
     if(!this.state.letters.includes(null)) {
+      toastr.info("The word was " + this.props.word);
       this.setState({
         gameOver: true
       });

@@ -85,7 +85,7 @@ div {
   font-size: 14px;
 }
 
-.button-2 {
+.button-2, .button-2:hover {
   background-color: #818384;
   border: 0px;
   width: 65px;
@@ -104,6 +104,7 @@ div {
   margin-top: 6px;
   font-size: 14px;
 }
+
 .text {
   font-size: 2rem;
   font-weight: bold;
@@ -121,12 +122,7 @@ div {
   background-color: #818384;
 }
 
-.btn-flat {
-  background-color: #818384;
-  color: white;
-}
-
-.btn-flat:focus {
+.btn-flat, .btn-flat:hover, .btn-flat:focus {
   background-color: #818384;
   color: white;
 }
