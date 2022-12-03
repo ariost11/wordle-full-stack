@@ -149,7 +149,7 @@ export default class Grid extends React.Component {
     );
 
     return (
-      <div onClick={() => this.focusKeyboard()}>
+      <div id='backgound' onClick={() => this.focusKeyboard()}>
         <div id='header'>Wordle<p id='streak-info'>{this.props.winStreak} Game Win Streak</p></div>
         <div id='frame'>
           {list}

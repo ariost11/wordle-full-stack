@@ -1,10 +1,9 @@
-* {
-  background-color: #121213;
-}
-
-div {
+#backgound {
   text-align: center;
   background-color: #121213;
+  position: absolute;
+  height: 100%;
+  width: 100%;
 }
 
 #header {
