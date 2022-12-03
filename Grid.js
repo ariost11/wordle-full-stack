@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Row, Col, Button, Card } from 'react-bootstrap';
+import $ from 'jquery';
 import toastr from 'toastr';
 import 'toastr/build/toastr.min.css';
 
@@ -25,6 +26,11 @@ export default class Grid extends React.Component {
     this.submitWord = this.submitWord.bind(this);
     this.renameWord = this.colorWord.bind(this);
     this.playAgain = this.playAgain.bind(this);
+    this.focusKeyboard = this.focusKeyboard.bind(this);
+  }
+
+  focusKeyboard() {
+    $('#keyboard').focus();
   }
 
   updateLetters(letter) {
@@ -142,7 +148,7 @@ export default class Grid extends React.Component {
     );
 
     return (
-      <div>
+      <div onClick={() => this.focusKeyboard()}>
         <div id='header'>Wordle<p id='streak-info'>{this.props.winStreak} Game Win Streak</p></div>
         <div id='frame'>
           {list}
