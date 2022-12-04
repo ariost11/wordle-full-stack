@@ -149,13 +149,12 @@ export default class Grid extends React.Component {
     );
 
     return (
-      <div id='backgound' onClick={() => this.focusKeyboard()}>
+      <div onClick={() => this.focusKeyboard()}>
         <div id='header'>Wordle<p id='streak-info'>{this.props.winStreak} Game Win Streak</p></div>
         <div id='frame'>
           {list}
         </div>
-        <Keyboard update={this.updateLetters} delete={this.deleteLetter} submit={this.submitWord} green={this.state.greenLetters} yellow=
-      {this.state.yellowLetters} gray={this.state.grayLetters}/>
+        <Keyboard update={this.updateLetters} delete={this.deleteLetter} submit={this.submitWord} green={this.state.greenLetters} yellow={this.state.yellowLetters} gray={this.state.grayLetters}/>
         {this.state.gameOver && <Button id='button-3' onClick={() => this.playAgain()}>Play Again</Button>}
       </div>
     );

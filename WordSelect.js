@@ -20,9 +20,7 @@ export default class WordSelect extends React.Component {
   render() {
     var index = Math.floor(Math.random() * 2309);
     return(
-      <div>
-        <Grid word={this.state.words[index]} wordList={this.state.words} restart={this.newGame} winStreak={this.state.winStreak}/>
-      </div>
+      <Grid word={this.state.words[index]} wordList={this.state.words} restart={this.newGame} winStreak={this.state.winStreak}/>
     );
   }
 }

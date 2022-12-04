@@ -1,7 +1,9 @@
-#backgound {
-  text-align: center;
+body{
+  width: 100%;
   background-color: #121213;
-  position: relative;
+  text-align: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 #header {
@@ -18,7 +20,7 @@
 }
 
 #frame {
-  margin: 31px;
+  margin: 31px 0px 31px 0px;
 }
 
 #letter {
@@ -112,11 +114,6 @@
 
 #streak-info {
   font-size: 14px;
-  color: #ffffff;
-}
-
-#icon {
-  background-color: #818384;
 }
 
 .btn-flat, .btn-flat:hover, .btn-flat:focus {

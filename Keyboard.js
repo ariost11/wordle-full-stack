@@ -60,7 +60,7 @@ export default class Keyboard extends React.Component{
         <Row className="justify-content-md-center">
           <Col className='no-frame' sm md="auto"><Button variant="flat" className='button-2' id='keyboard' onClick={() => this.props.submit()}>ENTER</Button></Col>
           {thirdRow}
-          <Col className='no-frame' sm md="auto"><Button className='button-2' onClick={() => this.props.delete()}><FontAwesomeIcon id='icon' icon={faDeleteLeft}/></Button></Col>
+          <Col className='no-frame' sm md="auto"><Button className='button-2' onClick={() => this.props.delete()}><FontAwesomeIcon icon={faDeleteLeft}/></Button></Col>
         </Row>
       </div>
     );
