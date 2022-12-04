@@ -3,7 +3,6 @@ body{
   background-color: #121213;
   text-align: center;
   overflow-x: hidden;
-  overflow-y: hidden;
 }
 
 #header {
@@ -34,14 +33,17 @@ body{
 
 #green {
   background-color: #538d4e;
+  padding: 4px 0px 4px 0px;
 }
 
 #yellow {
   background-color: #b59f3b;
+  padding: 4px 0px 4px 0px;
 }
 
 #gray {
   background-color: #3a3a3c;
+  padding: 4px 0px 4px 0px;
 }
 
 #button {

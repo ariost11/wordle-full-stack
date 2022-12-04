@@ -111,7 +111,7 @@ export default class Grid extends React.Component {
       }
       if(this.state.submits + 1 != count / 5) {
         toastr.error("I want a 5 letter word!");
-      } else if(!this.props.wordList.includes(this.state.letters.map((a, ai) => ai >= (this.state.submits + 1) * 5 - 5 && ai <= (this.state.submits + 1) * 5 - 1 ? a : "").join('').toLowerCase())) {
+      } else if(!this.props.guessList.includes(this.state.letters.map((a, ai) => ai >= (this.state.submits + 1) * 5 - 5 && ai <= (this.state.submits + 1) * 5 - 1 ? a : "").join('').toLowerCase())) {
         toastr.error("I think you made that word up...");
       } else {
         this.setState({
