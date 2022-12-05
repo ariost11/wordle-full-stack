@@ -95,7 +95,8 @@ export default class Grid extends React.Component {
     });
 
     if(!this.state.letters.includes(null)) {
-      toastr.info("The word was " + this.props.word);
+      if(!(wordColor[0] == 'green' && wordColor[1] == 'green' && wordColor[2] == 'green' && wordColor[3] == 'green' && wordColor[4] == 'green'))
+        toastr.info("The word was " + this.props.word);
       this.setState({
         gameOver: true
       });
@@ -134,6 +135,7 @@ export default class Grid extends React.Component {
       win: false
     });
     this.props.restart(this.state.win);
+    this.focusKeyboard();
   }
 
   render() {
@@ -150,7 +152,7 @@ export default class Grid extends React.Component {
 
     return (
       <div onClick={() => this.focusKeyboard()}>
-        <div id='header'>Wordle<p id='streak-info'>{this.props.winStreak} Game Win Streak</p></div>
+        <div id='header'>Wordle<p id='streak-info'>{(this.state.gameOver && !this.state.win) ? 0 : (this.props.winStreak + (this.state.win ? 1 : 0))} Game Win Streak</p></div>
         <div id='frame'>
           {list}
         </div>
