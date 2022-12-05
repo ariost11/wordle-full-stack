@@ -45,7 +45,7 @@ export default class Keyboard extends React.Component{
     );
     const thirdRow = ['Z', 'X', 'C', 'V', 'B', 'N', 'M'].map(a => 
       this.props.green.includes(a.toLowerCase()) ? <Col className='no-frame' sm md="auto"><Button id='button-green' onClick={() => this.props.update(a)}>{a}</Button></Col> : 
-      this.props.yellow.includes(a.toLowerCase()) ? <Col className='no-frane' sm md="auto"><Button id='button-yellow' onClick={() => this.props.update(a)}>{a}</Button></Col> :
+      this.props.yellow.includes(a.toLowerCase()) ? <Col className='no-frame' sm md="auto"><Button id='button-yellow' onClick={() => this.props.update(a)}>{a}</Button></Col> :
       this.props.gray.includes(a.toLowerCase()) ? <Col className='no-frame' sm md="auto"><Button id='button-gray' onClick={() => this.props.update(a)}>{a}</Button></Col> :
       <Col className='no-frame' sm md="auto"><Button id='button' onClick={() => this.props.update(a)}>{a}</Button></Col>
     );
